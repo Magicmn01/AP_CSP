@@ -1,10 +1,10 @@
 # AP Mad Libs
+adjective=input("can you me a adjective? ").strip()
+noun = input("can you me a noun? ").strip().capitalize()
+verb = input("can you me a verb in past tense? ").strip()
+adverb = input("can you me a adverb? ").strip()
+another_AD = input("can you me another adjective? ").strip()
+another_noun = input("can you me another noun? ").strip().capitalize()
 
-input("give me a adjective").strip()
-input("give me a noun").strip().capitalize()
-input("give me a verb in past tense").strip()
-input("give me a adverb").strip()
-input("give me another adjective").strip()
-input("give me another noun").strip().capitalize()
-
-print()
+sentence = "Today I went to the zoo. I saw a(n) " + adjective + noun + "jumping up and down in its tree. He " + verb + adverb + "through the large tunnel that led to its " + another_AD + another_noun + "."
+print(sentence)
