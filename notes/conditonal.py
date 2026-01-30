@@ -1,4 +1,4 @@
-"""number = 99
+number = 99
 
 if number < 10 and number >= -9:
     print(f"{number} is a single digit number")
@@ -9,6 +9,6 @@ else:
     print("....or is it?")
     new_number = number*number
     if new_number > 1000:
-        print (f"surpise numuber {new_number}")"""
+        print (f"surpise numuber {new_number}")
 
 
