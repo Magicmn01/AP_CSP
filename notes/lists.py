@@ -4,7 +4,7 @@ names = ["alex", "liz", "jake", "jessica", "tia"]
 print(len(names))
 names[0] = "eric"
 names.append("jayshree")# adds to the end of the list
-index = names.index("vienna")
+index = names.index("tia")
 names.pop(3) #removes item from the list based on index (or the end if no index is given)
 print(names)
 
@@ -14,3 +14,8 @@ for name in names:
 
 for number in numbers:
     print(f"{number} - 10 = {number-10}")
+
+    #iteration => repetiton
+
+    for i in range(20):
+        print(f"my code has iterated {i} times")

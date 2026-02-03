@@ -10,5 +10,3 @@ else:
     new_number = number*number
     if new_number > 1000:
         print (f"surpise numuber {new_number}")
-
-
