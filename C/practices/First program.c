@@ -11,7 +11,4 @@ int main(){
     printf("Your name is %s", user);
     return 0;
 
-
-
-
 }
