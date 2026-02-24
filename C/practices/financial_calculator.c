@@ -28,6 +28,7 @@ int main(){
     printf("your groceries is %.2f$, and that is %.2f percent of your income\n", grocer , 100*(grocer/income));
     printf("your transportation is %.2f$, and that is %.2f percent of your income\n", transport , 100*(transport/income));
     printf("you have %.2f dolllars left \n", income-rent-util-grocer-transport);
+    printf("you should save 15 percent");
 
 
 
