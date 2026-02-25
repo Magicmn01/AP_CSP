@@ -1,5 +1,5 @@
 # AP Mad Libs
-adjective=input("can you give me a adjective? ").strip()
+adjective = input("can you give me a adjective? ").strip()
 noun = input("can you give me a animal? ").strip().capitalize()
 verb = input("can you give me a verb in past tense? ").strip()
 adverb = input("can you give me a adverb? ").strip()
