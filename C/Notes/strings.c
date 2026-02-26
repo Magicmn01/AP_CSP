@@ -26,6 +26,5 @@ int main(){
     printf("%s\n", alpha);
 
     printf("%lu\n", strlen(frist));
-
     return 0;
 }

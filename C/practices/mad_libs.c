@@ -10,9 +10,7 @@ int main(){
     char verb[100];
     char space[] = " ";
 
-    strcat(adjective, space);
-    strcat(adverb, space);
-    strcat(another_AD, space);
+    
 
     printf("can you give me a adjective? \n");
     scanf("%s", &adjective);
@@ -31,13 +29,11 @@ int main(){
     
     printf("can you give me another noun?\n");
     scanf("%s", &another_noun);
-
-
     
-
-
-
-
-
+    strcat(adjective, space);
+    strcat(adverb, space);
+    strcat(another_AD, space);
+    
+    printf("Today I went to the zoo. I saw a(n) %s%s jumping up and down in its tree. He %s%s through the large tunnel that led to its %s%s.\n", adjective, noun, adverb, verb, another_AD, another_noun);
 
 }
