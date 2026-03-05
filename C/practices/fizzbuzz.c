@@ -6,22 +6,17 @@
 
 
  int main(){
-    int i = 1; 
-    while (i <= 51){
-        if (i%3 == 0 && i%5 == 0){
-            printf("fizzbuzz");
-        }else if (i%3 == 0){
-            printf("fizz");
-        }else if (i%5 == 0){
-            printf("buzz");
+     
+    for (int n = 1; n <= 51; n++){
+        if (n%3 == 0 && n%5 == 0){
+            printf("fizzbuzz\n");
+        }else if (n%5 == 0){
+            printf("buzz\n");
+        }else if (n%3 == 0){
+            printf("fizz\n");
         }else{
-            printf("%d\n", i);
+            printf("%d\n", n);
         } 
-        while(i <= 51){
-        printf("%d\n", i);
-        i++; //increases i by 1
-        }
     }
-    
     return 0;
 }
