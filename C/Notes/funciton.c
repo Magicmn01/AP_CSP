@@ -14,6 +14,9 @@ float divide(int numone, int numtwo){
 }
 
 
+void hi(char* name){
+    printf("hi %s. welcome to your enternal suffering!!!!!!!! yay\n", name);
+}
 
 int main(){
     add();
@@ -27,7 +30,16 @@ int main(){
 
 
 
+    float quo = divide(8,4);
+    printf("%.2f\n", quo);
+    printf("%.2f\n", divide(75,2));
 
+
+    hi("john");
+    hi("alex");
+    hi("odin");
+    hi("jake");
+    hi("adam");
 
 
 

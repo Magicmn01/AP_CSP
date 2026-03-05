@@ -1,6 +1,16 @@
 //AP 6 financial calculator
 #include <stdio.h> 
 
+
+void mon(char* bill){
+    printf("hi %s. welcome to your enternal suffering!!!!!!!! yay\n", bill);
+}
+
+
+
+
+
+
 int main(){
     float income;
     float rent;
