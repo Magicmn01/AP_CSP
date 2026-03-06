@@ -13,6 +13,7 @@ float mon(char* bill){
 }
 float calc(float money, float inco){
     float percent = money/inco*100;
+    return percent;
 }
 
 
@@ -28,9 +29,9 @@ int main(){
     float saving = income*.15;
 
     printf("Your rent is %.2f$, and that is %.2f percent of your income\n", rent , calc(rent, income));
-     printf("Your rent is %.2f$, and that is %.2f percent of your income\n", rent , calc(rent, income));
-      printf("Your rent is %.2f$, and that is %.2f percent of your income\n", rent , calc(rent, income));
-      
+    printf("Your rent is %.2f$, and that is %.2f percent of your income\n", util , calc(util, income));
+    printf("Your rent is %.2f$, and that is %.2f percent of your income\n", grocer , calc(grocer, income));
+    printf("Your rent is %.2f$, and that is %.2f percent of your income\n", transport , calc(transport, income));
     printf("You should save 15 percent of your income which is %.2f$\n", saving);
     printf("You have %.2f dolllars left \n", income-saving-rent-util-grocer-transport);
     return 0;
