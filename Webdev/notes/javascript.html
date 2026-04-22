@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+                JavaScrpit notes
+        </title>
+        <meta charset="UTF-8">
+       <style>
+        img{
+            display: none;
+            width: 50%;
+        }
+       </style>
+       <script>
+           let count = 0
+           let img_count = 0
+           let imgs = ['https://sb.ecobnb.net/app/uploads/sites/3/2022/04/copertina-1.jpg',"https://oyla.us/wp-content/uploads/2023/08/forest1.jpg",'https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/master/w_1024%2Cc_limit/BlackForest-Germany-GettyImages-147180370.jpg']
+
+            function change(){
+                if(img_count >= imgs.length){
+                    img_count = 0
+                }else{
+                    img_count += 1
+                }
+                document.getElementById("timp").src = imgs[img_count]
+            }
+
+           function color_change(){
+                document.getElementById("shift").style.color = document.getElementById('selected-color').value
+            }
+            function add(){
+                count += 1
+                document.getElementById('number').innerHTML = count
+            }
+            function hover(id){
+            document.getElementById(id).style.backgroundColor = "red"
+             document.getElementById(id).style.color = "white"
+        }
+        function unhover(id){
+             document.getElementById(id).style.backgroundColor = "lightgray"
+             document.getElementById(id).style.color = "black"
+        }
+        function popup(){
+            alert("this is about javascript!")
+        }
+        function show(){
+            if(document.getElementById('timp').style.display == "block"){
+                 document.getElementById('timp').style.display = 'none'
+            }else{
+            document.getElementById('timp').style.display = 'block'
+        }
+    }
+        </script>
+    </head>
+    <body>
+        <h1 id="shift" onclick="popup()">java script notes</h1>
+        <input type="color" id="selected-color"/>
+        <button onclick="color_change()" onmouseover="hover('1')" onmouseout="unhover('1')" id="1">Change color</button>
+        <button onclick="add()" onmouseover="hover('2')" onmouseout="unhover('2')" id="2">Increase</button>
+        <p id="number" onmouseover="show()">0</p>
+        <img id="timp" alt="timpanogos" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ1hTOCpIAgnA4wOl3DtnYe91LwykHPRYKhQ&s" onmouseover="change()">
+    </body>
+</html>
